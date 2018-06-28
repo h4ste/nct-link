@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jaxb:bindings
+    xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" jaxb:version="2.1"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2000/10/XMLSchema-instance"
+    xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc">
+    <jaxb:globalBindings>
+        <xjc:serializable uid="1"/>
+    </jaxb:globalBindings>
+
+
+	<jaxb:bindings schemaLocation="pubmed_170101.xsd" node="/xs:schema">
+		<jaxb:schemaBindings>
+			<jaxb:package name="edu.utdallas.hltri.data.pubmed.jaxb"/>
+		</jaxb:schemaBindings>	
+	</jaxb:bindings>
+</jaxb:bindings>
