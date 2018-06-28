@@ -1,0 +1,3 @@
+[submodule "trec-pm"]
+	path = trec-pm
+	url = https://github.com/h4ste/trec-pm

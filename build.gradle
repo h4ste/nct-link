@@ -1,0 +1,30 @@
+plugins {
+	id 'java'
+}
+
+group 'edu.utdallas.hltri'
+version '1.0.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	// Java date parsing library
+	compile 'com.joestelmach:natty:0.13'
+
+	// Google's general utility library
+	compile 'com.google.guava:guava:21.+'
+	compileOnly 'com.google.errorprone:error_prone_annotations:2.0.15'
+
+	// jUnit testing framework
+	testCompile 'com.novocode:junit-interface:0.11'
+
+    // Spooky in-house UTD libraries
+    compile 'edu.utdallas.hltri:hltri-util:1.0.1'
+    compile 'edu.utdallas.hltri:inquire:0.1.0'
+
+    compile project('trec-pm')
+}
